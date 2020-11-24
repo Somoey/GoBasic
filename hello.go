@@ -17,7 +17,7 @@ const age = 20
 
 var name = "Somoey"
 
-func main() {
+func Hello() {
 	fmt.Println("Hello, World!")
 	fmt.Println("My name is " + name)
 }

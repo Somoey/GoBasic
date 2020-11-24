@@ -12,6 +12,11 @@ const (
 	c3 = unsafe.Sizeof(c2)
 )
 
+//在函数中返回多个值
+func swap(x, y string) (string, string) {
+	return y, x
+}
+
 func main() {
 
 	// 声明一个变量并初始化
@@ -26,14 +31,14 @@ func main() {
 	var c bool
 	fmt.Println(c)
 
-	var d = 100
-	fmt.Println(d)
+	// var d = 100
+	// fmt.Println(d)
+	// f := 1000
+	// fmt.Println(f)
+	// fmt.Println(c1)
+	// fmt.Println(c2)
+	// fmt.Println(c3)
 
-	f := 1000
-	fmt.Println(f)
-
-	fmt.Println(c1)
-	fmt.Println(c2)
-	fmt.Println(c3)
-
+	str1, str2 := swap("haha", "hehe")
+	fmt.Println(str1, str2)
 }
