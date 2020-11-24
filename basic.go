@@ -41,4 +41,8 @@ func main() {
 
 	str1, str2 := swap("haha", "hehe")
 	fmt.Println(str1, str2)
+
+	var pointer *int
+	pointer = &b
+	fmt.Println(pointer)
 }
